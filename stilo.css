@@ -1,0 +1,267 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.portada {
+    background-color: #c3cbd3;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .header {
+        background-color: white;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE4xvW6z2GPRmObFyFkiYZNaVKnP-k3bgJiA&usqp=CAU);
+        display: flex;   
+        flex-flow: column nowrap;
+
+    }
+
+        .atajos{
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+        }
+        
+            .logo{
+                flex: 1 1 auto;
+            }
+
+            .boton-menu{
+                display: none;
+                background: none;
+                color: #71b6b0;
+                font-size: 40px;
+                cursor: pointer;
+                border-style: none;
+            }
+
+            .nav{
+                flex: 5 1 auto;
+            } 
+
+                .nav-menu{
+                    display: flex;
+                    justify-content: end;
+                }
+
+                    .nav-menu-item{
+                        list-style: none;
+                        padding: 5px;
+                    }
+
+                        .nav-link{
+                            background-color: #676b6a;
+                            padding: 5px;
+                            border-radius: 10px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                        }
+
+                             a{
+                                font-family: 'Montserrat', sans-serif;
+                            }
+            
+                
+
+            .portada{
+                
+                background-image: url(https://scontent.fcor10-3.fna.fbcdn.net/v/t1.6435-9/118153126_101059995058228_3284255412866192029_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MmbxnvnY4pQAX_j48Ds&_nc_ht=scontent.fcor10-3.fna&oh=00_AT-5wEDCwBlXDgXgN8iHTFpbfJFZC1S6Ao4jJUnozzaeuQ&oe=63255EF7);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: #e8eceb;
+                
+            
+
+                width: 100%;
+                height: 720px;            
+            }
+                
+    
+
+        .titulo-destac{
+            padding: 10px;
+            margin: 10px 20px;
+            font-size: 20px; ;
+        }
+
+    .section{
+        display: flex;
+        padding: 0 30px;
+        max-width: 1400px;
+
+    }
+
+        .porductos-destac{
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+
+            justify-content: center;
+
+        }
+
+            .article{
+                background-color: #F7F7F7;
+                flex: 1 1 auto;
+                max-width: 200px;
+                max-height: 400px; 
+                margin: 20px 30px; 
+                border-bottom: 2px solid #6d9284;
+                
+                
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+            }
+
+                .name-produc{
+                    width: 200px;
+                    padding: 5px 0;
+                    margin: 10px 0;
+                    text-align: center;
+
+                }
+
+                .precio{
+                    width: 200px;
+                    padding: 5px 5px;
+                }
+
+                .producto-links {
+                    text-align: right;
+                  }
+                  
+                  .producto-links a {
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: #e1e1e1;
+                    transition: 0.3s;
+                    font-size: 17px;
+                  }
+                  
+                  .producto-links a:hover {
+                    color: red;
+                  }
+
+
+                .mas-detalles{
+                    background-color: #087551;
+                    padding: 5px;
+                    border-radius: 10px;
+
+                    margin: 10px 0;
+                }
+
+                    a{
+                        color: #fafcfb;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+
+            .ver-mas_produc{
+                flex:1 1 100%;
+                padding: 10px;
+
+                display: flex;
+                justify-content: center;
+            }
+
+                .ver-mas{
+                    background-color: #087551;
+                    padding: 10px;
+                    border-radius: 10px;
+
+
+                } 
+            
+            
+       .productos-variad{
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            width: 1283px;
+            padding: 20px 70px;
+
+            justify-content: center;
+         }
+
+                
+            
+                
+
+
+
+    .footer{
+        background-color: #001810;
+        height: 200px;
+    }
+
+        .pie{
+            background-color: #002214;
+            width: 100%;
+            width: 100px;
+        }
+
+
+@media screen and (max-width:800px) {
+    .boton-menu{
+        display: block;
+        flex: 1 1 auto; 
+        
+        display: flex;
+        margin: 0 10px;
+        
+        
+    }
+
+    .nav{
+        display: none;
+    }
+}
+
+
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
